@@ -38,19 +38,12 @@ h1, h2 {
 
 p {
   max-width: 70ch;
+  margin-inline: auto;
 }
 
 .container {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-}
-
-/* Ensure default elements span full width of the grid */
-.container > * {
-  grid-column: 1 / -1;
 }
 
 .site-header {
@@ -62,18 +55,18 @@ p {
 }
 
 .site-header .container {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  grid-column: span 6;
   font-size: 1.25rem;
   margin: 0;
 }
 
-nav {
-  grid-column: span 6;
-  justify-self: end;
+section h2 {
+  text-align: center;
 }
 
 .nav-list {
