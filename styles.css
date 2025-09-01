@@ -197,13 +197,13 @@ blockquote {
 
 #president .president-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 }
 
 #president .president-photo {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -228,8 +228,8 @@ blockquote {
   }
 
   #president .president-photo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }
 
