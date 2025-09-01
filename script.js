@@ -72,11 +72,17 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Contact form toast
+// Contact form mailto + toast
 const form = document.querySelector('#contact form');
 const toast = document.getElementById('toast');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+  window.location.href = `mailto:holistichealth@2h-academy.org?subject=Contact%20Form&body=${body}`;
   toast.textContent = 'Thank you! We will be in touch.';
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 3000);

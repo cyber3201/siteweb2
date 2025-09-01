@@ -120,6 +120,11 @@ section h2 {
   height: 40px;
 }
 
+.section-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -308,18 +313,90 @@ input:focus-visible, textarea:focus-visible {
   color: var(--color-accent);
 }
 
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 1rem;
+}
+
 #join .container {
   text-align: center;
 }
 
-#contact .container {
-  text-align: center;
+#contact .contact-container {
+  display: grid;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#contact .contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact .contact-info li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+#contact .info-icon {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+#contact h2 {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#contact .section-desc {
+  text-align: left;
 }
 
 #contact form {
-  max-width: 600px;
-  margin-inline: auto;
-  text-align: left;
+  background: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+#contact form .form-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#contact form .form-group.full {
+  grid-column: span 2;
+}
+
+#contact form .checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#contact form button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #contact form .form-group.full {
+    grid-column: span 1;
+  }
+}
+
+.linktree {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .toast {
