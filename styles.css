@@ -42,6 +42,10 @@ p {
   margin-inline: auto;
 }
 
+main p {
+  text-align: justify;
+}
+
 .container {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
@@ -123,6 +127,7 @@ section h2 {
 .section-desc {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .nav-list {
@@ -222,7 +227,7 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: var(--radius);
   font-family: inherit;
-  background: #f9f9f9;
+  background: #e9e9e9;
 }
 
 input:focus-visible, textarea:focus-visible {
@@ -315,17 +320,19 @@ input:focus-visible, textarea:focus-visible {
 
 .footer-logo {
   max-width: 120px;
-  margin-bottom: 1rem;
-}
-
-#join .container {
-  text-align: center;
+  margin: 0 auto 1rem;
 }
 
 #contact .contact-container {
   display: grid;
   gap: 2rem;
   align-items: flex-start;
+}
+
+#join .btn {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 0;
 }
 
 @media (min-width: 768px) {
@@ -348,7 +355,19 @@ input:focus-visible, textarea:focus-visible {
 
 #contact .info-icon {
   margin-right: 0.5rem;
-  font-size: 1.25rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+#contact address {
+  font-style: normal;
+}
+
+.contact-email {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 #contact h2 {
@@ -394,10 +413,6 @@ input:focus-visible, textarea:focus-visible {
   }
 }
 
-.linktree {
-  margin-top: 1rem;
-  text-align: center;
-}
 
 .toast {
   position: fixed;
