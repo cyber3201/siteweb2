@@ -92,10 +92,6 @@ section h2 {
   color: var(--color-bg);
 }
 
-.nav-list a.active {
-  color: var(--color-primary);
-}
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -214,57 +210,7 @@ input:focus-visible, textarea:focus-visible {
   margin-top: 4rem;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  padding: 0.5rem 0.75rem;
-  border: none;
-  border-radius: var(--radius);
-  background: var(--color-primary);
-  color: var(--color-bg);
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
 
-.back-to-top.visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-primary);
-  color: var(--color-bg);
-  padding: 1rem 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.toast.show {
-  opacity: 1;
-  transform: translate(-50%, -1rem);
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(1rem);
-  transition: opacity 0.6s, transform 0.6s;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: none;
-}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
