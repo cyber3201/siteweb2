@@ -366,6 +366,8 @@ input:focus-visible, textarea:focus-visible {
   display: grid;
   gap: 2rem;
   align-items: flex-start;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://i.ibb.co/206h64CC/rm380-12.jpg') center/cover no-repeat;
 }
 
 #join .btn {
