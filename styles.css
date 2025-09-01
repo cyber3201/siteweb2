@@ -198,16 +198,20 @@ blockquote {
 #president .president-content {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #president .president-photo {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
   box-shadow: var(--shadow);
+}
+
+#president blockquote {
+  margin-left: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -220,6 +224,12 @@ blockquote {
   #president blockquote {
     border-left: none;
     padding-left: 0;
+    margin-left: 0;
+  }
+
+  #president .president-photo {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -231,6 +241,7 @@ blockquote {
   border-radius: var(--radius);
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -386,6 +397,7 @@ input:focus-visible, textarea:focus-visible {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+  filter: invert(23%) sepia(96%) saturate(2710%) hue-rotate(347deg) brightness(78%) contrast(97%);
 }
 
 #contact address {
@@ -395,7 +407,11 @@ input:focus-visible, textarea:focus-visible {
 .contact-email {
   font-weight: 700;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-accent);
+}
+
+#contact .info-label {
+  color: var(--color-accent);
 }
 
 #contact h2 {
