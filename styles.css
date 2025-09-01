@@ -217,7 +217,7 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: var(--radius);
   font-family: inherit;
-  background: #e9e9e9;
+  background: #f9f9f9;
 }
 
 input:focus-visible, textarea:focus-visible {
@@ -231,6 +231,7 @@ input:focus-visible, textarea:focus-visible {
   gap: 1rem;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 
 .social-links a {
@@ -253,19 +254,58 @@ input:focus-visible, textarea:focus-visible {
 
 .site-footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 1rem 1rem;
   font-size: 0.875rem;
-  background: var(--color-primary);
+  background: #0b0b0b;
   color: var(--color-bg);
   margin-top: 2rem;
 }
 
-.site-footer a {
-  color: var(--color-bg);
+.site-footer h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.site-footer p {
+  margin: 0 auto 1rem;
+  color: #ccc;
 }
 
 .site-footer .social-links svg {
   fill: var(--color-bg);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+  color: var(--color-accent);
 }
 
 #join .container {
