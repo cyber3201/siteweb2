@@ -9,6 +9,8 @@
   --header-height: 4.2rem;
   --radius: 16px;
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --icon-accent-filter: invert(16%) sepia(61%) saturate(3274%) hue-rotate(352deg)
+    brightness(93%) contrast(95%);
 }
 
 * {
@@ -461,6 +463,7 @@ blockquote {
   display: grid;
   gap: 2rem;
   align-items: flex-start;
+  justify-items: center;
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
     url('https://i.ibb.co/206h64CC/rm380-12.jpg') center/cover no-repeat;
 }
@@ -477,10 +480,20 @@ blockquote {
   margin: 0;
 }
 
+#contact .contact-info {
+  text-align: center;
+}
+
 #contact .contact-info li {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+#contact .contact-info li div {
+  text-align: left;
 }
 
 #contact .info-icon {
@@ -488,7 +501,7 @@ blockquote {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  filter: brightness(0) saturate(100%);
+  filter: var(--icon-accent-filter);
 }
 
 #contact address {
@@ -498,7 +511,7 @@ blockquote {
 .contact-email {
   font-weight: 700;
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 #contact .info-label {
