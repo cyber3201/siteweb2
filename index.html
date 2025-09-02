@@ -156,27 +156,27 @@
         </div>
         <form action="mailto:holistichealth@2h-academy.org" method="post" enctype="text/plain">
           <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input id="name" name="name" type="text" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input id="phone" name="phone" type="tel" />
-            </div>
-            <div class="form-group full">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required />
-            </div>
-            <div class="form-group full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div class="form-group full checkbox">
-              <label><input type="checkbox" required /> I have read and accept the terms and conditions.</label>
-            </div>
+            <label class="form-field">
+              <span class="field-title">Your Name</span>
+              <input id="name" name="name" type="text" class="field-input" placeholder="Your Name" required />
+            </label>
+            <label class="form-field">
+              <span class="field-title">Phone Number</span>
+              <input id="phone" name="phone" type="tel" class="field-input" placeholder="Phone Number" />
+            </label>
+            <label class="form-field full">
+              <span class="field-title">Email</span>
+              <input id="email" name="email" type="email" class="field-input" placeholder="Email" required />
+            </label>
+            <label class="form-field full">
+              <span class="field-title">Message</span>
+              <textarea id="message" name="message" class="field-input" placeholder="Message" required></textarea>
+            </label>
+            <label class="checkbox full">
+              <input type="checkbox" required /> I have read and accept the terms and conditions.
+            </label>
           </div>
-          <button class="btn btn-primary" type="submit">Send</button>
+          <button class="send-btn" type="submit"><span class="send-btn-content">Send</span></button>
         </form>
       </div>
     </section>
