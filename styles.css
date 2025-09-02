@@ -489,7 +489,7 @@ blockquote {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 1rem;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 #contact .contact-info li div {
@@ -511,7 +511,7 @@ blockquote {
 .contact-email {
   font-weight: 700;
   text-decoration: none;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 #contact .info-label {
