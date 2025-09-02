@@ -1,12 +1,12 @@
 :root {
   --color-primary: #006400;
-  --color-accent: #0099ff;
+  --color-accent: #b22222;
   --color-bg: #ffffff;
     --color-section-bg: #eafff3;
   --color-text: #0b0b0b;
   --font-family: 'Nunito', system-ui, sans-serif;
   --max-width: 1200px;
-  --header-height: 5rem;
+  --header-height: 6rem;
   --radius: 16px;
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
@@ -43,7 +43,7 @@ p {
 }
 
 main p {
-  text-align: justify;
+  text-align: center;
 }
 
 .container {
@@ -94,7 +94,7 @@ main p {
 }
 
   .logo img {
-    height: 64px;
+    height: 90px;
     width: auto;
   }
 
@@ -369,7 +369,7 @@ blockquote {
 }
 
 .site-footer .footer-logo {
-  width: 80px;
+  width: 120px;
   height: auto;
   margin-inline: auto;
 }
@@ -476,12 +476,12 @@ blockquote {
 }
 
 #contact h2 {
-  justify-content: flex-start;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
 }
 
 #contact .section-desc {
-  text-align: left;
+  text-align: center;
 }
 
 #contact form {
