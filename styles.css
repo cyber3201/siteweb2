@@ -6,7 +6,7 @@
   --color-text: #0b0b0b;
   --font-family: 'Nunito', system-ui, sans-serif;
   --max-width: 1200px;
-  --header-height: 6rem;
+  --header-height: 4.2rem;
   --radius: 16px;
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
@@ -96,7 +96,7 @@ main p {
 }
 
   .logo img {
-    height: 48px;
+    height: 34px;
     width: auto;
   }
 
@@ -107,7 +107,7 @@ main p {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.35rem;
 }
 
 .menu-toggle span {
@@ -141,7 +141,7 @@ section h2 {
 .section-icon {
   width: 40px;
   height: 40px;
-  filter: invert(16%) sepia(90%) saturate(4857%) hue-rotate(358deg) brightness(90%) contrast(102%);
+  filter: brightness(0) saturate(100%);
 }
 
 .section-desc {
@@ -163,7 +163,7 @@ section h2 {
   text-decoration: none;
   color: var(--color-bg);
   font-weight: 600;
-  padding: 0.5rem 0.75rem;
+  padding: 0.35rem 0.5rem;
   position: relative;
 }
 
@@ -476,7 +476,7 @@ blockquote {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  filter: invert(16%) sepia(90%) saturate(4857%) hue-rotate(358deg) brightness(90%) contrast(102%);
+  filter: brightness(0) saturate(100%);
 }
 
 #contact address {
