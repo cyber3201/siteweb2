@@ -302,12 +302,36 @@ input:focus-visible, textarea:focus-visible {
 }
 
 .site-footer {
+  position: relative;
   text-align: center;
   padding: 3rem 1rem 1rem;
   font-size: 0.875rem;
-  background: #0b0b0b;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
   color: var(--color-bg);
   margin-top: 2rem;
+  overflow: hidden;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.site-footer > * {
+  position: relative;
+  z-index: 1;
 }
 
 .site-footer h3 {
@@ -325,7 +349,7 @@ input:focus-visible, textarea:focus-visible {
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 2rem;
   padding-top: 1rem;
   display: flex;
