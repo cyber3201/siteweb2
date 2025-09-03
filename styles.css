@@ -258,10 +258,10 @@ section > .container {
   }
 }
 
-@media
 .hero > .container {
   background: none;
   box-shadow: none;
+  border-radius: 0;
   padding: 0 1rem;
 }
 
