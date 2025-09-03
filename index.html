@@ -215,9 +215,18 @@
       </div>
       <div class="footer-contact">
         <h3>Contact</h3>
-        <p>📍 Casablanca, Morocco</p>
-        <p>✉ <a href="mailto:contact@holistichealthacademy.com">contact@holistichealthacademy.com</a></p>
-        <p>☎ +212 XXX XXX XXX</p>
+        <form action="mailto:holistichealth@2h-academy.org" method="post" enctype="text/plain" class="footer-form">
+          <label for="footer-name" class="visually-hidden">Name</label>
+          <input id="footer-name" name="name" type="text" placeholder="Name" required />
+
+          <label for="footer-email" class="visually-hidden">Email</label>
+          <input id="footer-email" name="email" type="email" placeholder="Email" required />
+
+          <label for="footer-message" class="visually-hidden">Message</label>
+          <textarea id="footer-message" name="message" rows="3" placeholder="Message" required></textarea>
+
+          <button type="submit" class="footer-send-btn">Send</button>
+        </form>
       </div>
       <div class="footer-legal">
         <h3>Legal</h3>
@@ -229,7 +238,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Holistic Health Academy</p>
+      <p>© 2025 Holistic Health Academy. All Rights Reserved.</p>
     </div>
   </footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
