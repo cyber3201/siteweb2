@@ -398,6 +398,7 @@ blockquote {
 
 .site-footer {
   position: relative;
+  z-index: 0;
   background: linear-gradient(45deg, var(--color-accent), var(--color-primary));
   color: var(--color-bg);
   padding: 2rem 1rem 1rem;
@@ -411,6 +412,7 @@ blockquote {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
   background-image: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.1) 1px,
@@ -455,7 +457,7 @@ blockquote {
 }
 
 .site-footer .social-links {
-  margin: 1rem 0 0;
+  margin: 1rem 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -550,10 +552,17 @@ blockquote {
   background: var(--color-accent);
 }
 
+
+.footer-social {
+  text-align: center;
+}
+
 .footer-bottom {
   text-align: center;
   padding: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
 }
 
 .footer-bottom p {
