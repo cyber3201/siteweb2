@@ -88,3 +88,14 @@ form.addEventListener('submit', (e) => {
   setTimeout(() => toast.classList.remove('show'), 3000);
   form.reset();
 });
+
+// Footer quick links dropdown
+const quickToggle = document.querySelector('.quick-links-toggle');
+const footerNav = document.querySelector('.footer-nav');
+if (quickToggle && footerNav) {
+  quickToggle.addEventListener('click', () => {
+    const expanded = quickToggle.getAttribute('aria-expanded') === 'true';
+    quickToggle.setAttribute('aria-expanded', !expanded);
+    footerNav.classList.toggle('open');
+  });
+}
