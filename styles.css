@@ -467,12 +467,12 @@ blockquote {
 
 @media (min-width: 1000px) {
   .footer-grid {
-    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
   }
 }
 
 .footer-brand {
-  text-align: center;
+  text-align: left;
 }
 
 .site-footer .footer-logo {
@@ -497,7 +497,7 @@ blockquote {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
@@ -526,20 +526,17 @@ blockquote {
   fill: currentColor;
 }
 
-.footer-nav,
-.legal-nav {
+.footer-nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-nav li,
-.legal-nav li {
+.footer-nav li {
   margin-bottom: 0.5rem;
 }
 
-.footer-nav a,
-.legal-nav a {
+.footer-nav a {
   color: var(--color-bg);
   text-decoration: none;
   display: inline-block;
@@ -547,9 +544,7 @@ blockquote {
 }
 
 .footer-nav a:hover,
-.legal-nav a:hover,
-.footer-nav a:focus-visible,
-.legal-nav a:focus-visible {
+.footer-nav a:focus-visible {
   color: var(--color-bg);
   transform: scale(1.05);
 }
@@ -590,15 +585,36 @@ blockquote {
 
 
 .footer-bottom {
-  text-align: center;
   padding: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .footer-bottom p {
   margin: 0;
+}
+
+.policy-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.policy-links a {
+  color: var(--color-bg);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.policy-links a:hover,
+.policy-links a:focus-visible {
+  transform: scale(1.05);
 }
 
 #contact .contact-container {
