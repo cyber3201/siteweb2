@@ -258,12 +258,7 @@ section > .container {
   }
 }
 
-@media (min-width: 601px) {
-  .quick-links-toggle {
-    display: none;
-  }
-}
-
+@media
 .hero > .container {
   background: none;
   box-shadow: none;
@@ -556,28 +551,8 @@ blockquote {
   transform: scale(1.05);
 }
 
-.quick-links-toggle {
-  background: none;
-  border: none;
-  color: var(--color-bg);
-  font-size: 1.25rem;
-  font-weight: 700;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  padding: 0;
-}
 
-@media (max-width: 600px) {
-  .footer-nav {
-    display: none;
-  }
-  .footer-nav.open {
-    display: block;
-    margin-top: 0.5rem;
-  }
-}
-
+@media
 .footer-contact form {
   display: grid;
   gap: 0.5rem;
