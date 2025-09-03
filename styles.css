@@ -334,39 +334,63 @@ blockquote {
 
 .send-btn {
   position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: var(--color-primary);
-  background-size: 400%;
-  color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  background: var(--color-primary);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.send-btn::before {
+.send-btn::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
+  right: 0;
+  width: 0%;
   height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(82.3deg, var(--color-accent) 10.8%, var(--color-primary) 94.3%);
-  transition: transform 0.475s;
+  background: var(--color-accent);
+  transition: all 0.4s ease-in-out;
 }
 
-.send-btn:hover::before,
-.send-btn:focus-visible::before {
-  transform: scaleX(1);
+.send-btn:hover::after,
+.send-btn:focus-visible::after {
+  right: auto;
+  left: 0;
+  width: 100%;
 }
 
-.send-btn-content {
-  position: relative;
+.send-btn span {
+  width: 100%;
+  padding: 18px 25px;
+  color: var(--color-bg);
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-align: center;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn:hover span,
+.send-btn:focus-visible span {
+  color: var(--color-primary);
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .social-links {
@@ -703,7 +727,6 @@ blockquote {
 
 #contact form .send-btn {
   margin-top: 0.5rem;
-  width: 100%;
 }
 
 
