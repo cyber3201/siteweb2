@@ -236,77 +236,6 @@ section h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
-.focus-card {
-  --bg-color: rgba(0, 0, 0, 0.6);
-  background-color: var(--bg-color);
-  padding: 0.75rem 1.5rem;
-  border-radius: 1rem;
-  display: inline-block;
-  margin-inline: auto;
-}
-
-.focus-card .loader {
-  color: var(--color-bg);
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  display: flex;
-  align-items: center;
-  padding: 0.25rem 0;
-  gap: 0.25rem;
-}
-
-.focus-card .words {
-  overflow: hidden;
-  position: relative;
-}
-
-.focus-card .words::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    var(--bg-color) 10%,
-    transparent 30%,
-    transparent 70%,
-    var(--bg-color) 90%
-  );
-  z-index: 20;
-}
-
-.focus-card .word {
-  display: block;
-  padding-left: 0.25rem;
-  color: var(--color-accent);
-  animation: spin_4991 4s infinite;
-}
-
-@keyframes spin_4991 {
-  10% {
-    transform: translateY(-102%);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  35% {
-    transform: translateY(-202%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-302%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  85% {
-    transform: translateY(-402%);
-  }
-  100% {
-    transform: translateY(-400%);
-  }
-}
 
 section {
   scroll-margin-top: var(--header-height);
@@ -649,7 +578,7 @@ blockquote {
   background: var(--color-primary);
   color: var(--color-bg);
   border: none;
-  padding: 0.5rem;
+  padding: 0.75rem 1.5rem; /* keep button tall */
   border-radius: var(--radius);
   cursor: pointer;
 }
