@@ -89,3 +89,25 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
+// Loader overlay
+const loader = document.getElementById('loader');
+window.addEventListener('load', () => {
+  loader.classList.add('hidden');
+});
+
+document.querySelectorAll('a[href]').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      loader.classList.remove('hidden');
+      setTimeout(() => {
+        document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => loader.classList.add('hidden'), 500);
+      }, 300);
+    } else {
+      loader.classList.remove('hidden');
+    }
+  });
+});
+
